@@ -240,7 +240,7 @@ header {
 
 
 
-@media only screen and (max-width: 992px)  {
+@media only screen and (max-width: 900px)  {
 
 	.container {
 		padding-top: 0;
@@ -319,7 +319,7 @@ header {
 }
 .code
 {
-	transform: scale(0.4);
+	transform: scale(0.2);
 }
 .hljs.language-sql{
 
@@ -327,7 +327,7 @@ header {
 	margin-top: 0px;
 	padding-top: 0px;
 	padding-bottom: 15px;
-	transform: scale(0.5);
+	transform: scale(0.35);
 	position: absolute;
 }
 
