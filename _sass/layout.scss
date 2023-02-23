@@ -28,7 +28,7 @@
 	padding-top: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
-	grid-template-rows: 115px 576px auto auto 400px 200px;
+	grid-template-rows: 115px 576px auto auto 400px 550px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"p p p p p p p p p p p p"
@@ -248,7 +248,7 @@ header {
 		margin-left: 0px;
 		grid-column-gap: 0px;
 		grid-template-columns: 0;
-		grid-template-rows: 15px 576px auto 300px 200px 300px;
+		grid-template-rows: 15px 576px auto 300px 200px 600px;
 		grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"p p p p p p p p p p p p"
@@ -410,21 +410,23 @@ header {
 // Footer
 
 footer {
+	color: $feature-text-color;
 	grid-area: d;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-self: end;
+	margin-top: auto;
+
 }
 
 .footerText {
-	color: $footer-text-color;
-	display: block;
-	line-height: 1.5;
-	width: 100%;
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
+    display: flex;
+    line-height: 1.5;
+    width: 100%;
+    justify-content: center;
+    padding-top: 87px;
+    padding-bottom: 70px;
+    align-items: flex-end
 }
 
 .footerIcons {
