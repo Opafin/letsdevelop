@@ -20,20 +20,22 @@
 	background-color: #fff;
 }
 
-.container {					// Set up the container for the site content
+.container {
 	display: grid;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: $content-width;
 	padding-top: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
-	// grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: 115px 576px auto auto;
+	grid-template-rows: 115px 576px auto auto 400px 200px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
-		"p p p p p i i i i i i i"
+		"p p p p p p p p p p p p"
 		"c c c c c c c c c c c c"
-		"f f f f f f f f f f f f";
+		"j j j j j j j j j j j j"
+		"g g g g g g g g g g g g"
+		"d d d d d d d d d d d d";
 }
 
 header {
@@ -102,19 +104,158 @@ header {
 	line-height: 1.5;
 }
 
+.codeContainer
+{
+	grid-area: g;
+	height: fit-content !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.codeLogo
+{
+	margin-top: 100px;
+	margin-bottom: 40px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+}
+.codeLogo img{
+	width: 100%;
+	height: 100%;
+}
+
+.codeDescription{
+	margin-top: 15px;
+	line-height: 1.5;
+	color: $feature-text-color;
+	margin-bottom:  15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.highlightedCode
+{
+	width: auto;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+
+.code
+{
+	margin-left: 1px;
+    margin-right: auto;
+    width: auto;
+	transform: scale(0.5);
+	height:auto;
+	display: flex;
+	position: flex;
+	margin-top: auto;
+
+}
+
+//HighlightJS thinks Unity C# is SQL, so here goes.
+.hljs.language-sql{
+	display:table;
+	border-radius: 20px;
+	transform: scale(0.8);
+	margin-top: 5px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	padding-right: 12px;
+	padding-left: 12px;
+	width: auto;
+	
+}
+
+.linkToGitHub{
+	color: $feature-text-color;
+	margin-top: 45px;
+	margin-bottom:  10px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	width: 600px;
+}
+
+.cineContainer{
+	margin-top: 50px;
+	grid-area: g;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center
+}
+
+.cinelogo
+{
+	transform: scale(0.5);
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.cinelogo img{
+	height: 100%;
+	width: 100%;
+}
+
+.cineDescription{
+	line-height: 1.5;
+	color: $feature-text-color;
+	margin-bottom:  30px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.cinemachine{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
 @media only screen and (max-width: 992px)  {
 
 	.container {
 		padding-top: 0;
+		height: auto;
+		margin-left: 0px;
 		grid-column-gap: 0px;
 		grid-template-columns: 0;
-		grid-template-rows: 15px auto auto auto auto;
+		grid-template-rows: 15px 576px auto 300px 200px 300px;
 		grid-template-areas: 
-			"h h h h h h h h h h h h"
-			"i i i i i i i i i i i i"
-			"p p p p p p p p p p p p"
-			"c c c c c c c c c c c c"
-			"f f f f f f f f f f f f";
+		"h h h h h h h h h h h h"
+		"p p p p p p p p p p p p"
+		"c c c c c c c c c c c c"
+		"j j j j j j j j j j j j"
+		"g g g g g g g g g g g g"
+		"d d d d d d d d d d d d";
 	}
 
 	.imageWrapper {
@@ -150,7 +291,118 @@ header {
 	
 	.feature:nth-child(3n+1) {
 		padding-left: 15px;
-	}
+	}.code{
+	position: flex;
+	margin-right: auto;
+	justify-content: space-around;
+}
+
+.codeContainer {
+	grid-area: j;
+}
+.codeTitle
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+.codeDescription{
+	line-height: 1.5;
+	padding-right: 15px;
+	margin-top: 10px;
+	min-width: 120px;
+	margin-bottom:  30px;
+	margin-left: 40px;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.code
+{
+	transform: scale(0.4);
+}
+.hljs.language-sql{
+
+	display: table;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	transform: scale(0.5);
+	position: absolute;
+}
+
+.highlightedCode
+{
+	width: auto;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+
+
+
+.linkToGitHub{
+	color: $feature-text-color;
+	margin-top: 150px;
+	margin-bottom:  10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.cineContainer{
+	grid-area: g;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center
+	
+}
+
+.cinelogo
+{
+	transform: scale(0.5);
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.cinelogo img{
+	height: 100%;
+	width: 100%;
+}
+
+.cineDescription{
+	line-height: 1.5;
+	color: $feature-text-color;
+	margin-bottom:  15px;
+	padding-right: 15px;
+	margin-left: 60px;
+	margin-top: 30px;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.cinemachine{
+	margin-left: 15px;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
 }
 
 
@@ -158,10 +410,11 @@ header {
 // Footer
 
 footer {
-	grid-area: f;
+	grid-area: d;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-self: end;
 }
 
 .footerText {
@@ -198,3 +451,4 @@ footer {
 .hidden {
 	display: none;
 }
+

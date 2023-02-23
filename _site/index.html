@@ -42,15 +42,11 @@
 
 		div#gameContainer {
 			background: transparent !important;
-			/* position: absolute; */
 		}
 
-		/* div#gameContainer canvas {
-			position: absolute;
-		} */
+
 
 		div#gameContainer canvas[data-pixel-art="true"] {
-			/* position: absolute; */
 			image-rendering: optimizeSpeed;
 			image-rendering: -webkit-crisp-edges;
 			image-rendering: -moz-crisp-edges;
@@ -140,6 +136,7 @@
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
                 <i class="iconTop fas fa-gamepad fa-stack-1x"></i>
             </span>
+            
         </div>
         <div class="featureText">
             <h3>
@@ -150,8 +147,9 @@
             </p>
         </div>
     </div>
-    
 
+    
+    
     
 
     
@@ -161,6 +159,7 @@
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
                 <i class="iconTop fas fa-magic fa-stack-1x"></i>
             </span>
+            
         </div>
         <div class="featureText">
             <h3>
@@ -171,8 +170,9 @@
             </p>
         </div>
     </div>
-    
 
+    
+    
     
 
     
@@ -182,6 +182,7 @@
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
                 <i class="iconTop fas fa-play-circle fa-stack-1x"></i>
             </span>
+            
         </div>
         <div class="featureText">
             <h3>
@@ -192,8 +193,9 @@
             </p>
         </div>
     </div>
-    
 
+    
+    
     
 
     
@@ -203,6 +205,7 @@
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
                 <i class="iconTop fas fa-sync fa-stack-1x"></i>
             </span>
+            
         </div>
         <div class="featureText">
             <h3>
@@ -213,8 +216,9 @@
             </p>
         </div>
     </div>
-    
 
+    
+    
     
 
     
@@ -224,6 +228,7 @@
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
                 <i class="iconTop fas fa-star fa-stack-1x"></i>
             </span>
+            
         </div>
         <div class="featureText">
             <h3>
@@ -234,15 +239,59 @@
             </p>
         </div>
     </div>
+
+    
+    
     
 
     
-
     
-
     
-
+    
 </div>
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">    
+</head>
+<body>
+    <div class="codeContainer">
+        <div class="codeLogo">
+            <img src="assets/c-sharp.png" alt="C# logo">
+        </div>
+        <div class="codeDescription">
+            Game Making in the Unity Engine requires quite a bit of coding. This little practice project has 400 lines of C# code. 
+            <br></br>
+            For example: here is the code for moving the player, checking if the player has movement, and activating the running animation at the appropriate time. 
+        </div>
+        <div class="code"></div>
+        <pre class="highlightedCode">
+        <code>
+myRigidbody.velocity = new Vector2(moveInput.x * runSpeed, myRigidbody.velocity.y);
+
+isRunning = (Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon);
+
+myAnimator.SetBool("isRunning", isRunning);
+        </code>
+        </pre>
+        <button class="copy-code-button">Copy Code</button>
+  
+        <div class="linkToGitHub">
+            The PlayerScript can be seen in Github at: <a href="https://github.com/opafin">https://github.com/opafin</a></div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        const copyCodeButton = document.querySelector('.copy-code-button');
+        const codeElement = document.querySelector('code');
+        copyCodeButton.addEventListener('click', () => {
+        navigator.clipboard.writeText(codeElement.innerText);
+        });
+    </script>
+    </div>
+</body>
+</html>
                     <footer>
 	
 	<p class="footerText">Made by Opafin</p>
@@ -276,6 +325,6 @@
 	</div>
 	</div>
 </footer>
-        </div>
-</body>
-</html>
+                </div>
+            </body>
+                </html>
