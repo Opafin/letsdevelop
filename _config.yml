@@ -21,7 +21,7 @@ features:
     fontawesome_icon_name: magic
 
   - title: Grab a Ladder!
-    description: Up Arrow grabs a ladder, Jump or pressing down exits a ladder
+    description: Up Arrow grabs a ladder, Jump or pressing down exits a ladder. *Dexterity challenge!* Try to jump from one ladder to another without touching the ground!
     fontawesome_icon_name: play-circle
 
   - title: Dynamic Camera
@@ -29,7 +29,7 @@ features:
     fontawesome_icon_name: sync
 
   - title: Coyotetime
-    description: The player has two jumps, always. Try run off a cliff, still both jumps to use! This is called coyotetime. It makes movement more dynamic.
+    description: The player has two jumps, always. Try run off a cliff - still both jumps to use! This is called coyotetime. It makes movement more dynamic.
     fontawesome_icon_name: star
 
   - title: # New Feature Title

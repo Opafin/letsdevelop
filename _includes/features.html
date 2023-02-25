@@ -16,7 +16,7 @@
                 {{ feature.title }}
             </h3>
             <p>
-                {{ feature.description }}
+                {{ feature.description | regex_replace('/dexterity challenge/i', '<strong>Dexterity challenge!</strong>') | safe }}
             </p>
         </div>
     </div>
