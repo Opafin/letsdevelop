@@ -21,7 +21,7 @@ features:
     fontawesome_icon_name: magic
 
   - title: Grab a Ladder!
-    description: Up Arrow grabs a ladder, Jump or pressing down exits a ladder. *Dexterity challenge!* Try to jump from one ladder to another without touching the ground!
+    description: Up Arrow grabs a ladder, Jump or pressing down exits a ladder.<br><b>Dexterity challenge!</b> Try to jump from one ladder to another without touching the ground!
     fontawesome_icon_name: play-circle
 
   - title: Dynamic Camera
