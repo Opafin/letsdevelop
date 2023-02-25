@@ -2,7 +2,7 @@ $font:default;
 
 .body{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.02rem !important;
+	font-size: 1.05rem !important;
 }
 
 .imageWrapper {					// Sets the background image in the header area
@@ -37,7 +37,7 @@ $font:default;
 	padding-left: 15px;
 	padding-right: 15px;
 	max-width: 100% !important;
-	grid-template-rows: 40px 576px auto 20px 400px 450px;
+	grid-template-rows: 40px 576px auto 100px 400px 450px;
 	grid-template-areas: 
 		"h"
 		"p"
@@ -61,7 +61,6 @@ header {
 }
 
 .features {
-	transform: scale(1.05);
 	grid-area: c;
     display: flex;
 	margin: auto;
@@ -107,12 +106,13 @@ header {
 
 .featureText > h3 {
 	color: $feature-title-color;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 .featureText > p {
 	color: $feature-text-color;
 	margin-top: 8px;
+	font-size: 1.2rem;
 	line-height: 1.5;
 }
 

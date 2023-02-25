@@ -17,7 +17,7 @@ features:
     fontawesome_icon_name: gamepad
 
   - title: View Controls
-    description: Press Up Arrow to Gaze Up. Press Down Arrow to Gaze down.
+    description: Press Up Arrow to Gaze Up. Press Down Arrow to Gaze down. Running zooms out, stopping zooms in after a while.
     fontawesome_icon_name: magic
 
   - title: Grab a Ladder!
