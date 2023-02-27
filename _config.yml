@@ -13,7 +13,7 @@ github_username: opafin
 # Feature List                            Edit, add or remove features to be presented.
 features:
   - title: Movement Controls
-    description: Press the Arrowkeys to move. Press Z to Jump. Press Z again to Doublejump! Press Shift to Sprint.
+    description: Press the Arrowkeys to move. Press Z to Jump. Press Z again to Doublejump! Press Shift to <b>Sprint</b>.
     fontawesome_icon_name: gamepad
 
   - title: View Controls
