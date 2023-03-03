@@ -302,14 +302,14 @@ header {
 		margin-left: 0px;
 		grid-column-gap: 0px;
 		grid-template-columns: 0px;
-		grid-template-rows: 15px 576px auto 400px 300px 200px;
+		grid-template-rows: 15px 576px auto 420px 300px 200px;
 		grid-template-areas: 
-		"h h h h h h h"
-		"p p p p p p p"
-		"c c c c c c c"
-		"j j j j j j j"
-		"g g g g g g g"
-		"d d d d d d d";
+		"h"
+		"p"
+		"c"
+		"j"
+		"g"
+		"d";
 		
 	}
 
@@ -322,7 +322,7 @@ header {
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-top: 35px;
-		margin-bottom: 110px;
+		margin-bottom: 50px;
 		width: 80%;
 	}
 
@@ -371,22 +371,22 @@ header {
 }
 .codeDescription{
 	line-height: 1.5;
-	// padding-right: 25px;
 	margin-top: 10px;
-	min-width: 120px;
-	margin-bottom: 30px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-bottom: 10px;
+	max-width: 300px;
+	padding-left: 40px;
+	padding-right: 40px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+
 }
+
 
 .hljs.language-sql{
 
 	display: table;
 	margin-top: 0px;
 	padding-top: 0px;
-	padding-bottom: 15px;
 	transform: scale(0.45);
 	position: absolute;
 }
@@ -397,6 +397,7 @@ header {
 	display: flex;
 	position: relative;
 	justify-content: space-around;
+	margin-bottom: 0px;
 }
 
 .btn {
@@ -427,14 +428,14 @@ header {
 	flex-direction: column;
 	color: rgb(255, 255, 255);
 	margin-top: 50px;
-	margin-bottom:  30px;
-	padding-left: 10px;
-	padding-right: 10px;
+	margin-bottom:  50px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
 	justify-content: center;
-	min-width: 250px;
+	min-width: 150px;
 }
 
 .cineContainer{
