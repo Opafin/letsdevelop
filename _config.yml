@@ -13,11 +13,11 @@ github_username: opafin
 # Feature List                            Edit, add or remove features to be presented.
 features:
   - title: Movement Controls
-    description: Press the Arrowkeys to move. Press Z to Jump. Press Z again to Doublejump! Press Shift to <b>Sprint</b>.
+    description: Arrowkeys to move. <br>Z to Jump. <br>Z again to Doublejump! <br>Shift to Sprint.
     fontawesome_icon_name: gamepad
 
   - title: View Controls
-    description: Press Up Arrow to Gaze Up. Press Down Arrow to Gaze down. Running zooms out, stopping zooms in after a while.
+    description: Up Arrow to Gaze Up.<br> Down Arrow to Gaze down.<br> Running zooms out, stopping zooms in after a while.
     fontawesome_icon_name: magic
 
   - title: Grab a Ladder!
@@ -45,7 +45,7 @@ cover_image: assets/headerimage.png # Replace with alternative image path or ima
 cover_overlay_color: "#363b3d"
 cover_overlay_transparency: 0.8
 
-body_background_color: "#ffffff"
+body_background_color: "#2b2c36"
 
 link_color: "#1d63ea"
 

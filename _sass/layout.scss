@@ -2,12 +2,17 @@
     box-sizing: unset !important;
 }
 
+.bgcolor{
+	background-color: #212529 !important;
+	height: 100%;
+}
 
 $font:default;
 
 .body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.05rem !important;
+	background-color: #212529 !important;
 }
 
 .imageWrapper {					// Sets the background image in the header area
@@ -41,7 +46,7 @@ $font:default;
 	max-width: 100% !important;
 	margin-left: -15px !important;
 	padding-right: 0px !important;
-	grid-template-rows: 40px 576px auto 100px 400px 450px;
+	grid-template-rows: 40px 576px auto 100px 388px 450px;
 	grid-template-areas: 
 		"h"
 		"p"
@@ -105,12 +110,12 @@ header {
 }
 
 .featureText > h3 {
-	color: $feature-title-color;
+	color: #b1b1bb;
 	font-size: 1.5rem;
 }
 
 .featureText > p {
-	color: $feature-text-color;
+	color:#9e9ea7;
 	margin-top: 8px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -153,7 +158,7 @@ header {
 	margin-top: 15px;
 	transform: scale(1.05);
 	line-height: 1.5;
-	color: #ffffff;
+	color: #dcdce7;
 	margin-bottom:  20px;
 	max-width: 600px;
 	display: flex;
@@ -227,7 +232,7 @@ header {
 }
 
 .linkToGitHub{
-	color: rgb(255, 255, 255);
+	color:#dcdce7;
 	margin-top: 25px;
 	margin-bottom:  45px;
 	padding-left: 50px;
@@ -497,8 +502,9 @@ header {
 
 // Footer
 
+
 footer {
-	color: $feature-text-color;
+	
 	grid-area: d;
 	display: flex;
 	flex-wrap: wrap;
@@ -508,6 +514,7 @@ footer {
 }
 
 .footerText {
+	color: #b1b1bb;
     display: flex;
     line-height: 1.5;
     width: 100%;
