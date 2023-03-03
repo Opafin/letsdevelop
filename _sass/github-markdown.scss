@@ -262,12 +262,12 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body [type=checkbox] {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0;
 }
 
 .markdown-body * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .markdown-body input {

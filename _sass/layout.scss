@@ -1,3 +1,8 @@
+*, ::after, ::before {
+    box-sizing: unset !important;
+}
+
+
 $font:default;
 
 .body{
@@ -33,10 +38,9 @@ $font:default;
 .container {
 	
 	display: grid;
-	padding-top: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
 	max-width: 100% !important;
+	margin-left: -15px !important;
+	padding-right: 0px !important;
 	grid-template-rows: 40px 576px auto 100px 400px 450px;
 	grid-template-areas: 
 		"h"
@@ -47,13 +51,9 @@ $font:default;
 		"d";
 		}
 .container.style{
-	max-width: inherit;
+	max-width: 100%;
 }
-		
 
-.g{
-	width:max-content;
-}
 
 header {
 	grid-area: h;
@@ -423,12 +423,18 @@ header {
 
 .linkToGitHub{
 	color: $feature-text-color;
+	display: flex;
+	flex-direction: column;
 	color: rgb(255, 255, 255);
 	margin-top: 50px;
 	margin-bottom:  30px;
-	margin-left: 30px;
-	margin-right: 30px;
-	width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	justify-content: center;
+	min-width: 250px;
 }
 
 .cineContainer{
