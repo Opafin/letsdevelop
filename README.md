@@ -1,11 +1,11 @@
 # letsdevelop
 
 This is a webpage to present a practice C# project.
-See the associated Github Page. https://opafin.github.io/letsdevelop/
+See the associated Github Page. https://opafin.github.io/website_letsdevelop/
 
-The Code is in the practicegit at https://github.com/opafin/practicegit
+The C# practice project code is in the practicegit at https://github.com/opafin/csharp_practicegit
 
-The page is based on a free Jekyll Theme that I've heavily modified to
+The page is based on a free Jekyll Theme. In addition to the markdown, I've also heavily modified the HTML, CSS and JS to
 Present a WebGL Unity build.
 
 More info on the Jekyll Theme in "JekyllTheme" in the repository.
