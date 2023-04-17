@@ -1,5 +1,3 @@
-# letsdevelop
-
 This is a webpage to present a practice C# Game project.
 See the associated Github Page and play the game at. https://opafin.github.io/website_letsdevelop/
 
